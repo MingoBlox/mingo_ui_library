@@ -1,0 +1,21 @@
+name: Semantic release
+
+on: push
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: Install dependencies
+        run: npm install
+      - name: Build app
+        run: npm run build
+      - name: Semantic release
+        env:
+          GITHUB_TOKEN: ${{ secrets.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 }}
+          NPM_TOKEN: ${{ secrets.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 }}
+        run: npx semantic-release

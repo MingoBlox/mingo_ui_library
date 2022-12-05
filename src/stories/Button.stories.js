@@ -11,7 +11,7 @@ export default {
 export const primary = () => {
 
   return (
-    <Button onClick={action('You clicked!')} btnName='Primary' variant={Primary} />
+    <Button onClick={action('You clicked!')} btnName='Primary' variant={Primaryy} />
   )
 
 };

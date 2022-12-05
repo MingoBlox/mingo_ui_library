@@ -11,15 +11,15 @@ export default {
 export const primary = () => {
 
   return (
-    <Button onClick={action('You clicked!')} btnName='Primary' variant={Primaryy} />
+    <Button onClick={action('You clicked!')} btnName='Primary' variant={Primary} />
   )
 
 };
 
-// export const outlined = () => {
+export const outlined = () => {
 
-//   return (
-//     <Button onClick={action('You clicked!')} btnName='Outlined' variant={Outlined} />
-//   )
+  return (
+    <Button onClick={action('You clicked!')} btnName='Outlined' variant={Outlined} />
+  )
 
-// };
+};

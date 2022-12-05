@@ -16,10 +16,10 @@ export const primary = () => {
 
 };
 
-export const outlined = () => {
+// export const outlined = () => {
 
-  return (
-    <Button onClick={action('You clicked!')} btnName='Outlined' variant={Outlined} />
-  )
+//   return (
+//     <Button onClick={action('You clicked!')} btnName='Outlined' variant={Outlined} />
+//   )
 
-};
+// };

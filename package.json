@@ -1,5 +1,4 @@
 {
-  "homepage": "https://github.com/MingoBlox/mingo_ui_library",
   "name": "mingo_ui_library",
   "version": "0.1.0",
   "private": true,
@@ -21,9 +20,7 @@
     "eject": "react-scripts eject",
     "build:tailwind": "postcss src/css/base.css -o src/css/tailwind.css",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -o docs-build",
-    "predeploy": "npm run build-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static"
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
@@ -65,9 +62,7 @@
     "@storybook/react": "^6.5.14",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
-    "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
-    "semantic-release": "^19.0.5",
     "tailwindcss": "^3.2.4",
     "webpack": "^5.75.0"
   }

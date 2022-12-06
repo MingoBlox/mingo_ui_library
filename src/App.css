@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Baloo 2', sans-serif;
+  height: 100vh;
+  background-color: #fff;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+
+/*===============Pro SideBar ================*/
+#active {
+  background-color: #F2F2FE;
+  color: #6666EA;
+}
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

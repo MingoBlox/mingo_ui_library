@@ -1,12 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {},
     colors: {
-      default_white: "#fff"
+      default_blue: '#6666EA',
+      default_white: '#fff',
+      default_grey: '#656565',
+      secondary_blue: '#9999F1',
+      hover_blue: '#6C63FF',
+      default_dark: '#000',
+      light_grey: '#C0C0C2',
+      default_outline: '#CCCCF8',
     }
   },
   plugins: [],

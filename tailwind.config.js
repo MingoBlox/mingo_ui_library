@@ -12,6 +12,10 @@ module.exports = {
       default_dark: '#000',
       light_grey: '#C0C0C2',
       default_outline: '#CCCCF8',
+      secondary_red: "#FF0D0D",
+      secondary_green: "#15C2A5",
+      outline_light: "#CCCCF8",
+      outline_deep: "#9999F1",
     }
   },
   plugins: [],

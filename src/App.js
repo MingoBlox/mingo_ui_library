@@ -8,6 +8,7 @@ import MingoPagination from './pages/ComponentPages/MingoPagination';
 import MingoSearchBar from './pages/ComponentPages/MingoSearchBar';
 import MingoTabs from './pages/ComponentPages/MingoTabs';
 import MingoTags from './pages/ComponentPages/MingoTags';
+import ProgressBar from './pages/ComponentPages/ProgressBar';
 import Home from './pages/Home/Home';
 import Introduction from './pages/Home/Introduction';
 
@@ -26,6 +27,7 @@ function App() {
         <Route exact path='/mingosearch' element={<MingoSearchBar />} />
         <Route exact path='/pagination' element={<MingoPagination />} />
         <Route exact path='/cards' element={<MingoCards />} />
+        <Route exact path='/progressbar' element={<ProgressBar />} />
       </Routes>
     </Router>
   );

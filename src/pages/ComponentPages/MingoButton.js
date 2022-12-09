@@ -150,7 +150,6 @@ const MingoButton = () => {
                     </div>
                 </div>
 
-
             </div>
         </>
     )

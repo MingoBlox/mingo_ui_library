@@ -1,6 +1,6 @@
 import React from 'react';
 import ProSideBar from '../Home/ProSideBar';
-import { EllipsisHorizontalIcon, MagnifyingGlassIcon, Square2StackIcon, Square3Stack3DIcon, SquaresPlusIcon, TagIcon } from '@heroicons/react/24/outline';
+import { Battery50Icon, EllipsisHorizontalIcon, MagnifyingGlassIcon, Square2StackIcon, Square3Stack3DIcon, SquaresPlusIcon, TagIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 
 
@@ -128,7 +128,7 @@ const CompoIndex = () => {
                         {/* Pagination */}
                         <div className='row mt-3'>
                             <div className='col-md-4'>
-                                <p className='text-lg font-semibold'>4. Pagination</p>
+                                <p className='text-lg font-semibold'>5. Pagination</p>
                             </div>
                             <div className='col-md-8'>
                                 <div className='row'>
@@ -153,7 +153,7 @@ const CompoIndex = () => {
                         {/* Cards */}
                         <div className='row mt-3'>
                             <div className='col-md-4'>
-                                <p className='text-lg font-semibold'>4. Cards</p>
+                                <p className='text-lg font-semibold'>6. Cards</p>
                             </div>
                             <div className='col-md-8'>
                                 <div className='row'>
@@ -165,6 +165,32 @@ const CompoIndex = () => {
                                                         <Square2StackIcon className='w-8 h-8 flex mr-auto ml-auto' />
 
                                                         <p className='text-lg mt-2'>Mingo Cards</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        {/* Progress */}
+                        <div className='row mt-3'>
+                            <div className='col-md-4'>
+                                <p className='text-lg font-semibold'>7. Progress Bar</p>
+                            </div>
+                            <div className='col-md-8'>
+                                <div className='row'>
+                                    <div className='col-md-6'>
+                                        <Link to="/progressbar">
+                                            <div className='card rounded-md shadow-sm border-0'>
+                                                <div className='card-body'>
+                                                    <div className='text-center'>
+                                                        <Battery50Icon className='w-8 h-8 flex mr-auto ml-auto' />
+
+                                                        <p className='text-lg mt-2'>Mingo Progress Bar</p>
                                                     </div>
                                                 </div>
                                             </div>

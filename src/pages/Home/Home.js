@@ -1,3 +1,4 @@
+import { MagnifyingGlassIcon } from '@heroicons/react/24/outline';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../Images/logo.png';
@@ -26,15 +27,23 @@ const Home = () => {
                         A utility-first CSS framework packed with classes like flex, pt-4, text-center and <br />
                         rotate-90 that can be composed to build any design, directly in your markup.
                     </p>
-
-
-                    <div className='mt-4'>
-                        <input className='outline outline-1 outline-default_blue h-10 w-80 rounded-full px-3' placeholder='Quick Search...' />
-                    </div>
                     <br />
 
                     <div className='mt-4'>
-                        <Link className='bg-default_dark text-default_white py-1.5 px-3 rounded-md text-xl hover:bg-hover_blue hover:text-default_white' to="/introduction">
+                        {/* <input className='outline outline-1 outline-default_blue h-10 w-80 rounded-full px-3' placeholder='Quick Search...' /> */}
+                        <div className="absolute left-0 right-0">
+                            <input type="search" id="search_form" className="h-10 w-80 pr-8 pl-5 rounded-full outline outline-1 outline-outline_light placeholder-outline_deep" placeholder='Search...' autoFocus />
+                            <div className="relative ml-64 bottom-8">
+                                <button type="button" className="bg-outline_deep rounded-full py-1 px-3">
+                                    <MagnifyingGlassIcon className="text-default_white z-20 w-5 h-4" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <br /> <br />
+
+                    <div className='mt-4'>
+                        <Link className='bg-outline_deep text-default_white py-1 px-5 rounded-full text-xl hover:bg-hover_blue hover:text-default_white' to="/introduction">
                             Get Started
                         </Link>
                     </div>

@@ -1,7 +1,7 @@
 import React from 'react';
-import { PrimaryButton } from '../../Components/Buttons/Buttons';
+import { CustomButton, PrimaryButton } from '../../Components/Buttons/Buttons';
 import { Link } from 'react-router-dom';
-import { ArrowLeftIcon, ClipboardDocumentListIcon } from '@heroicons/react/24/outline';
+import { ArrowLeftIcon, ClipboardDocumentListIcon, EnvelopeIcon } from '@heroicons/react/24/outline';
 import { CopyCode } from '../../functions/CopyCode';
 
 const MingoButton = () => {
@@ -69,7 +69,14 @@ const MingoButton = () => {
                             </pre>
                         </div>
 
-                        <div className='mt-3'>
+                    </div>
+                </div>
+
+
+
+                <div className='card mt-3'>
+                    <div className='card-body'>
+                        <div>
                             <p className='font-semibold text-2xl'>Sizes</p>
                             <div className='flex justify-between mb-2'>
                                 <div className='mt-2 mb-2 flex gap-5'>
@@ -103,6 +110,47 @@ const MingoButton = () => {
 
                     </div>
                 </div>
+
+
+                <div className='card mt-3'>
+                    <div className='card-body'>
+                        <div>
+                            <p className='font-semibold text-2xl'>Others</p>
+                            <div className='flex justify-between mb-2'>
+                                <div className='mt-2 mb-2 flex gap-5'>
+                                    <CustomButton
+                                        btnName='Outline'
+                                        className='text-default_blue px-3 flex py-1 text-md outline outline-1 outline-default_blue rounded-md w-full hover:bg-default_blue hover:text-default_white hover:outline-none'
+                                        onClick={() => alert('You Clicked')}
+                                        btnIcon={<EnvelopeIcon className='w-5 h-5' />}
+                                    />
+                                </div>
+
+                                <div className='mt-2'>
+                                    <button className='text-lg' onClick={() => CopyCode('btnCode3')}>
+                                        <ClipboardDocumentListIcon className='w-6 h-6' />
+                                    </button>
+                                </div>
+                            </div>
+
+                            <pre>
+                                {`<!-- Fill Rounded -->`}
+                                <code id='btnCode3'>
+                                    {`    
+<CustomButton
+    btnName='Outline'
+    className='text-default_blue px-3 flex py-1 text-md outline outline-1 outline-default_blue rounded-md w-full hover:bg-default_blue hover:text-default_white hover:outline-none'
+    onClick={() => alert('You Clicked')}
+    btnIcon={<EnvelopeIcon className='w-5 h-5' />}
+/>`}
+                                </code>
+                            </pre>
+                        </div>
+
+                    </div>
+                </div>
+
+
             </div>
         </>
     )

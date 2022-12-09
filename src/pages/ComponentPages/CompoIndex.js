@@ -1,6 +1,6 @@
 import React from 'react';
 import ProSideBar from '../Home/ProSideBar';
-import { EllipsisHorizontalIcon, MagnifyingGlassIcon, Square3Stack3DIcon, SquaresPlusIcon, TagIcon } from '@heroicons/react/24/outline';
+import { EllipsisHorizontalIcon, MagnifyingGlassIcon, Square2StackIcon, Square3Stack3DIcon, SquaresPlusIcon, TagIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 
 
@@ -148,6 +148,33 @@ const CompoIndex = () => {
                                 </div>
                             </div>
                         </div>
+
+
+                        {/* Cards */}
+                        <div className='row mt-3'>
+                            <div className='col-md-4'>
+                                <p className='text-lg font-semibold'>4. Cards</p>
+                            </div>
+                            <div className='col-md-8'>
+                                <div className='row'>
+                                    <div className='col-md-6'>
+                                        <Link to="/cards">
+                                            <div className='card rounded-md shadow-sm border-0'>
+                                                <div className='card-body'>
+                                                    <div className='text-center'>
+                                                        <Square2StackIcon className='w-8 h-8 flex mr-auto ml-auto' />
+
+                                                        <p className='text-lg mt-2'>Mingo Cards</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
 
                     </div>
 

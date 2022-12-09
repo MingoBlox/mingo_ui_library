@@ -3,6 +3,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import './App.css';
 import CompoIndex from './pages/ComponentPages/CompoIndex';
 import MingoButton from './pages/ComponentPages/MingoButton';
+import MingoCards from './pages/ComponentPages/MingoCards';
 import MingoPagination from './pages/ComponentPages/MingoPagination';
 import MingoSearchBar from './pages/ComponentPages/MingoSearchBar';
 import MingoTabs from './pages/ComponentPages/MingoTabs';
@@ -24,6 +25,7 @@ function App() {
         <Route exact path='/mingotags' element={<MingoTags />} />
         <Route exact path='/mingosearch' element={<MingoSearchBar />} />
         <Route exact path='/pagination' element={<MingoPagination />} />
+        <Route exact path='/cards' element={<MingoCards />} />
       </Routes>
     </Router>
   );
